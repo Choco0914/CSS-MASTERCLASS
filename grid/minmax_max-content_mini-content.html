@@ -1,45 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CSS Grid(minmax, max-content, mini-content)</title>
-</head>
+
   <style>
-    .father {
-      display: grid;
-      grid-gap: 10px;
-      grid-template-columns: max-content repeat(3, 1fr);
-    }
 
-    .first {
-      background-color: #f1c40f;
-    }
-
-    .second {
-      background-color: #27ac60;
-    }
-
-    .third {
-      background-color: #3498db;
-    }
-
-    .fourth {
-      background-color: #d35400;
-    }
-    
+         .father {
+        display: grid;
+        grid-auto-rows: 200px;
+        grid-gap: 10px;
+        grid-template-columns: max-content repeat(3, 1fr) ;
+      }
+  
+      .first {
+        background-color: #f1c40f;
+      }
+  
+      .second {
+        background-color: #27ac60;
+      }
+  
+      .third {
+        background-color: #3498db;
+      }
+  
+      .fourth {
+        background-color: #d35400;
+      }
+  
   </style>
+</head>
 <body>
-  <div class="father">
-    <div class="first">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-       Repudiandae, tenetur sunt. Explicabo dolor, ipsa voluptatibus rem id 
-       tempora obcaecati amet totam cupiditate, dolorum nulla! Dicta cupiditate 
-       aspernatur dignissimos hic distinctio?</div>
-    <div class="second"></div>
-    <div class="third"></div>
-    <div class="fourth"></div>
-  </div>
+  
+    <div class="father">
+        <div class="first">Lorem ipsum dolor sit, amet consectetur adipisicing 
+          elit. Quasi expedita blanditiis voluptatibus vel cumque officiis 
+          voluptatum? Nemo ducimus deleniti assumenda quis fugiat autem nobis 
+          dolores a, ut, voluptate esse architecto.</div>
+        <div class="second"></div>
+        <div class="third"></div>
+        <div class="fourth"></div>
+      </div>
+  
 </body>
 </html>
